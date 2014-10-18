@@ -1,0 +1,26 @@
+ui <---> API
+HTTP:
+- method: GET, POST, PUT, DELETE
+- status code: 2xx (OK), 4xx (Client Error), 5xx (Server Error)
+- url: http://www.domeniu.com/users/create?param=value&param=value#hashtag
+- body: content
+- header: Accept: <type>, Content-Type: <type>
+
+REST:
+- resources (URL)
+    - create resource: POST  /users
+	- read resource: GET  /users -> [...]
+					 GET /users/:id -> {object}
+	- update resource: PUT /users/:id
+	- delete resource: DELETE /users/:id
+
+CURL:
+curl -XGET https://webdev-c9-alexandrutopliceanu.c9.io/users
+curl -XPOST https://webdev-c9-alexandrutopliceanu.c9.io/users -d '{"name": "Iulian Radu"}' -H 'Content-Type: application/json'
+curl -XDELETE https://webdev-c9-alexandrutopliceanu.c9.io/users/<id>
+
+Browser JS:
+- ajax
+- setTimeout
+
+console.log(JSON.stringify(a)); 
