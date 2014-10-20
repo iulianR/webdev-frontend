@@ -1,0 +1,16 @@
+.padded {
+  padding: 10px;
+}
+.shownupabove {
+  background-color: #0000FF;
+  color: white;
+  font-weight: bold;
+}
+.showninthecenter {
+  background-color: #9999FF;
+}
+.showndownbelow {
+  background-color: #0000FF;
+  color: white;
+  font-size: 80%;
+}

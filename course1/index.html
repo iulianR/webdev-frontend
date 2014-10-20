@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Awesome Web Page</title>
+		<link rel="stylesheet" href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div>
+			<button id="buttonthatdisplaystheupabovediv" class="btn btn-primary">
+				Show the top section
+			</button>
+			<button id="buttonthatdisplaysthecentraldiv" class="btn btn-info">
+				Show the actual page content
+			</button>
+			<button id="buttonthatdisplaysthedownbelowdiv" class="btn btn-danger">
+				Show the bottom section
+			</button>
+			<button id="buttonthatdisplaysthelinktopopupdiv" class="btn btn-warning">
+				Show link to popup
+			</button>
+			<button id="buttonthatdisplayseverything" class="btn btn-success">
+				Show everything
+			</button>
+		</div>
+		<div id="upabove" class="visualstate padded shownupabove" style="display: none;">This is the top section.</div>
+		<div id="inthecenter" class="visualstate padded showninthecenter" style="display: none;">This is the actual page content.</div>
+		<div id="downbelow" class="visualstate padded showndownbelow" style="display: none;">This is the bottom section.</div>
+		<div id="linkthatshowspopup" class="visualstate padded" style="display: none;"><a id="actualhyperlink" href="#">Click me to see the popup!</a></div>
+	</body>
+</html>
+<script src="http://webdev.rosedu.org/js/zepto.min.js"></script>
+<script src="app.js"></script>
