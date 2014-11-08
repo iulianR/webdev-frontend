@@ -22,14 +22,14 @@ var create = function (resource, data, callback) {
 	});
 };
 
-var read = function (resource, callback) {
+var read = function (callback) {
 	/**
 	 * @param {String} resource
 	 * @param {Function} callback
 	*/
 	$.ajax({
 		method: 'GET',
-		url: 'https://webdev-c9-alexandrutopliceanu.c9.io/' + resource,
+		url: 'http://api.viglink.com/api/click?key=29e3d375bf4f9bffd8e280587345bd05&out=http%3A%2F%2Fwww.ebay.com%2Fitm%2FNew-HTC-One-M7-32GB-Silver-AT-amp-T-Unlocked-Smartphone-%2F151330538805%3F%26_trksid%3Dp2056016.m2518.l4276&loc=https://www.hagg.ro',
 		success: function onSuccess(data) {
 			callback(null, data);
 		},
@@ -39,18 +39,18 @@ var read = function (resource, callback) {
 	});
 };
 
-create('users', {name: 'Iulian'}, function (error, data) { // functie anonimă
-	if (error) console.log('Eroare:', error.message);
-	else console.log('Success:', data);
-});
+//create('users', {name: 'Iulian'}, function (error, data) { // functie anonimă
+//	if (error) console.log('Eroare:', error.message);
+//	else console.log('Success:', data);
+//});
 
-read('users', function (error, data) {
+read(function (error, data) {
 	if (error) console.log('Eroare:', error.message);
 	else console.log('Success:', JSON.stringify(data));
 });
 
-setTimeout(function() {
-	console.log('something');
-}, 10000);
+//setTimeout(function() {
+//	console.log('something');
+//}, 10000);
 
 </script>
